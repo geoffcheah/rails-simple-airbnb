@@ -1,0 +1,20 @@
+<div class="grey-wrapper">
+  <div class="flats-container">
+    <h1>All Flats</h1>
+    <div class="cards">
+      <div class="flat-card">
+
+      </div>
+    </div>
+  </div>
+</div>
+<% @flats.each do |flat| %>
+<%= image_tag "../../assets/images/chelsea_flat.png", class: "img-card"%>
+<div class="card-content">
+  <h4><%= flat.name %></h4>
+  <p><%= flat.address %></p>
+  <div class="flex-content">
+    <i class="fas fa-users"><%= flat.number_of_guests %></i>
+    <i class="fas fa-pound-sign"> <%= flat.price_per_night %></i>
+  </div>
+</div>
